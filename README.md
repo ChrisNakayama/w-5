@@ -1,38 +1,97 @@
-# _{template-repo}_
+Age Calculator
 
-#### _{Brief description of application}_
+By Christopher Nakayama
 
-#### By _**{List of contributors}**_
+Description:
 
-## Technologies Used
+Solar Age Calculator
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+This program calculates age in solar years based on different planets years compared to an earth year. This program also calculates how many years left a person might have to live based on an average lifespan on earth.
 
-## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+Setup/Installation Requirements:
 
-## Setup/Installation Requirements
+Clone this github repository. Open files in your text editor. Edit script as necessary or simply drag index.html to your browser window to use the application as is. Your text editor must be able to handle HTML, CSS and JavaScript.
 
-* _clone template-repo to desired directory or download .zip file_
-* _navigate to the template-repo directory in terminal or other command line interface_
-* _while in the root directory run $ npm install_
-* _once bundle.js and the mode_module are installed open index.html in any browser_
+Known Bugs:
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+There are no known bugs. Support and contact details:
 
-## Known Bugs
+If you have any issues or questions, please contact me at cnakayam@gmail.com.
 
-* _Any known issues_
-* _should go here_
+Technologies Used:
 
-## License
+HTML, CSS and Javascript. The diractories used are Bootstrap.css for css and jQuery 3.6.0 for JavaScript.
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+License: MIT
 
-## Contact Information
+**Specs:
 
-_{Add your contact information here.}_
+**Behavior:** Ensure the number entered is a positive number.
+**Input:** -25
+**Output:** "age is negative"
+
+**Behavior:** Convert earth age to Mercury solar age.
+**Input:** 25
+**Output:** 104.17
+
+**Behavior:** Convert earth age to Venus solar age.
+**Input:** 25
+**Output:** 40.32
+
+**Behavior:** Convert earth age to Mars solar age.
+**Input:** 25
+**Output:** 13.30
+
+**Behavior:** Convert earth age to Jupiter solar age.
+**Input:** 25
+**Output:** 2.11
+
+**Behavior:** Calculate years left to live on Earth based on a life expectancy of 75 Earth years.
+**Input:** 25
+**Output:** 50
+
+**Behavior:** Calculate years left to live on Mercury based on a life expectancy of 75 earth years.
+**Input:** 25
+**Output:** -86.17
+
+**Behavior:** Calculate years left to live on Venus based on a life expectancy of 75 Earth years.
+**Input:** 25
+**Output:** 6.18
+
+**Behavior:** Calculate years left to live on Mars based on a life expectancy of 75 Earth years.
+**Input:** 25
+**Output:** 127.70
+
+**Behavior:** Calculate years left to live on Jupiter based on a life expectancy of 75 Earth years.
+**Input:** 25
+**Output:** 887.39
+
+**Behavior:** Calculate years past Earth life expectancy based on a life expectancy of 75 earth years.
+**Input:** 85
+**Output:** 10
+
+**Behavior:** Calculate years past Mercury life expectancy based on a life expectancy of 75 earth years.
+**Input:** 85
+**Output:** -292.10
+
+**Behavior:** Calculate years past Venus life expectancy based on a life expectancy of 75 earth years.
+**Input:** 85
+**Output:** -68.27
+
+**Behavior:** Calculate years past Mars life expectancy based on a life expectancy of 75 earth years.
+**Input:** 85
+**Output:** 119.91
+
+**Behavior:** Calculate years past Jupiter life expectancy based on a life expectancy of 75 earth years.
+**Input:** 85
+**Output:** 1001.78
+
+Create an age object;
+Ensure that the number entered for age is a positive number;
+Create a method that does the following:
+  convert age to Mercury years;
+  convert age to Venus years;
+  convert age to Mars years;
+  convert age to Jupiter years;
+  compare age to life expectancy and return the difference

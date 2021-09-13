@@ -35,3 +35,9 @@ describe('Age', () => {
       const jupiterAge = age.toJupiter();
       expect(jupiterAge).toEqual(25 / 11.86);
     });
+//test to determine years left to live in that planets solar year
+    test('should determine years left on Earth based on life expectancy', () => {
+      const age = new Age(25)
+      const earthYearsLeft = age.earthExpect();
+      expect(earthYearsLeft).toEqual(75 - 25);
+    });

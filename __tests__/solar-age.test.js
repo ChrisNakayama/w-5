@@ -53,3 +53,9 @@ describe('Age', () => {
       const venusYearsLeft = age.venusExpect();
       expect(venusYearsLeft).toEqual((75 * 0.62) - (25 / 0.62));
     });
+
+    test('should determine years left on Mars based on life expectancy', () => {
+      const age = new Age(25)
+      const marsYearsLeft = age.marsExpect();
+      expect(marsYearsLeft).toEqual((75 * 1.88) - (25 / 1.88));
+    });

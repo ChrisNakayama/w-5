@@ -11,3 +11,9 @@ describe('Age', () => {
       const negativeAge = new Age(-20);
       expect(negativeAge.negativeCheck()).toEqual("age is negative")
     });
+//tests to convert earth age to solar age of each respective planet
+    test('should convert age to Mercury age', () => {
+      const age = new Age(25)
+      const mercuryAge = age.toMercury();
+      expect(mercuryAge).toEqual(25 / 0.24);
+    });

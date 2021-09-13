@@ -88,3 +88,9 @@ export class Age {
     this.marsYearsPast = ((this.earthAge * 1.88) - (75 / 1.88));
     return this.marsYearsPast;
     }
+
+    jupiterBeyondAge() {
+    this.jupiterYearsPast = ((this.earthAge * 11.86)- (75 / 11.86));
+    return this.jupiterYearsPast;
+    }
+};

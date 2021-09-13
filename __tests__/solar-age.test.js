@@ -59,3 +59,9 @@ describe('Age', () => {
       const marsYearsLeft = age.marsExpect();
       expect(marsYearsLeft).toEqual((75 * 1.88) - (25 / 1.88));
     });
+
+    test('should determine years left on Jupiter based on life expectancy', () => {
+      const age = new Age(25)
+      const jupiterYearsLeft = age.jupiterExpect();
+      expect(jupiterYearsLeft).toEqual((75 * 11.86) - (25 / 11.86));
+    });

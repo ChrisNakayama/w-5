@@ -29,3 +29,9 @@ describe('Age', () => {
       const marsAge = age.toMars();
       expect(marsAge).toEqual(25 / 1.88);
     });
+
+    test('should convert age to Jupiter age', () => {
+      const age = new Age(25)
+      const jupiterAge = age.toJupiter();
+      expect(jupiterAge).toEqual(25 / 11.86);
+    });

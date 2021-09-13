@@ -58,3 +58,8 @@ export class Age {
     this.venusYearsLeft = ((75 * 0.62) - (this.earthAge / 0.62));
     return this.venusYearsLeft;
   }
+
+    marsExpect() {
+    this.marsYearsLeft = ((75 * 1.88) - (this.earthAge / 1.88));
+    return this.marsYearsLeft;
+  }

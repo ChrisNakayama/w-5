@@ -38,3 +38,8 @@ export class Age {
     this.marsAge = (this.earthAge / 1.88);
     return this.marsAge;
   }
+
+    toJupiter() {
+    this.jupiterAge = (this.earthAge / 11.86);
+    return this.jupiterAge;
+  }

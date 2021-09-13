@@ -90,3 +90,10 @@ describe('Age', () => {
       const marsYearsPast = age.marsBeyondAge();
       expect(marsYearsPast).toEqual((85 * 1.88) - (75 / 1.88));
     });
+
+    test('should determine years past life expectancy on Jupiter', () => {
+      const age = new Age(85)
+      const jupiterYearsPast = age.jupiterBeyondAge();
+      expect(jupiterYearsPast).toEqual((85 * 11.86) - (75 / 11.86));
+    });
+});

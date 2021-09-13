@@ -84,3 +84,9 @@ describe('Age', () => {
       const venusYearsPast = age.venusBeyondAge();
       expect(venusYearsPast).toEqual((85 * 0.62) - (75 / 0.62));
     });
+
+    test('should determine years past life expectancy on Mars', () => {
+      const age = new Age(85)
+      const marsYearsPast = age.marsBeyondAge();
+      expect(marsYearsPast).toEqual((85 * 1.88) - (75 / 1.88));
+    });

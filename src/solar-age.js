@@ -48,3 +48,8 @@ export class Age {
     this.earthLifeLeft = (75 - this.earthAge);
     return this.earthLifeLeft;
   }
+
+    mercuryExpect() {
+    this.mercuryYearsLeft = ((75 * 0.24) - (this.earthAge / 0.24));
+    return this.mercuryYearsLeft;
+  }

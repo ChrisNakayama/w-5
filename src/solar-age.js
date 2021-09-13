@@ -23,3 +23,8 @@ export class Age {
     return "age is negative";
     }
   }
+//methods to calculate solar age on each planet
+    toMercury() {
+    this.mercuryAge = (this.earthAge / 0.24);
+    return this.mercuryAge;
+  }

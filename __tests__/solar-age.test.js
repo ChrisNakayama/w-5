@@ -41,3 +41,9 @@ describe('Age', () => {
       const earthYearsLeft = age.earthExpect();
       expect(earthYearsLeft).toEqual(75 - 25);
     });
+
+    test('should determine years left on Mercury based on life expectancy', () => {
+      const age = new Age(25)
+      const mercuryYearsLeft = age.mercuryExpect();
+      expect(mercuryYearsLeft).toEqual((75 * 0.24) - (25 / 0.24));
+    });

@@ -72,3 +72,9 @@ describe('Age', () => {
       const earthYearsPast = age.earthBeyondAge();
       expect(earthYearsPast).toEqual(85 - 75);
     });
+
+    test('should determine years past life expectancy on Mercury', () => {
+      const age = new Age(85)
+      const mercuryYearsPast = age.mercuryBeyondAge();
+      expect(mercuryYearsPast).toEqual((85 * 0.24) - (75 / 0.24));
+    });

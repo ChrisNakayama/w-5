@@ -83,3 +83,8 @@ export class Age {
     this.venusYearsPast = ((this.earthAge * 0.62)- (75 / 0.62));
     return this.venusYearsPast;
     }
+
+    marsBeyondAge() {
+    this.marsYearsPast = ((this.earthAge * 1.88) - (75 / 1.88));
+    return this.marsYearsPast;
+    }

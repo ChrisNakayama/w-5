@@ -1,19 +1,35 @@
-import { Age } from './../src/solar-age.js';
+export class Age {
+  constructor(earthAge, mercuryAge, venusAge, marsAge, jupiterAge, earthYearsLeft, mercuryYearsLeft, venusYearsLeft, marsYearsLeft, jupiterYearsLeft, earthYearsPast, mercuryYearsPast, venusYearsPast, marsYearsPast, jupiterYearsPast) {
+    this.earthAge = earthAge;
+    this.mercuryAge = mercuryAge;
+    this.venusAge = venusAge;
+    this.marsAge = marsAge;
+    this.jupiterAge = jupiterAge;
+    this.earthYearsLeft = earthYearsLeft;
+    this.mercuryYearsLeft = mercuryYearsLeft;
+    this.venusYearsLeft = venusYearsLeft;
+    this.marsYearsLeft = marsYearsLeft;
+    this.jupiterYearsLeft = jupiterYearsLeft;
+    this.earthYearsPast = earthYearsPast;
+    this.mercuryYearsPast = mercuryYearsPast;
+    this.venusYearsPast = venusYearsPast;
+    this.marsYearsPast = marsYearsPast;
+    this.jupiterYearsPast = jupiterYearsPast;
+  }
 
-describe('Age', () => {
-//tests to ensure age is a number and positive value
-    test('should correctly create an age object that takes a number', () => {
-      const age = new Age(25);
-      expect(age.earthAge).toEqual(25);
-    });
+//Test to ensure proper type
+  negativeCheck() {
+  if (this.earthAge < 0) {
+    return "age is negative";
+    }
+  }
+//methods to calculate solar age on each planet
+    toMercury() {
+    this.mercuryAge = (this.earthAge / 0.24);
+    return this.mercuryAge;
+  }
 
-    test('should correctly determine whether Age is negative', () => {
-      const negativeAge = new Age(-20);
-      expect(negativeAge.negativeCheck()).toEqual("age is negative")
-    });
-//tests to convert earth age to solar age of each respective planet
-    test('should convert age to Mercury age', () => {
-      const age = new Age(25)
-      const mercuryAge = age.toMercury();
-      expect(mercuryAge).toEqual(25 / 0.24);
-    });
+    toVenus() {
+    this.venusAge = (this.earthAge / 0.62);
+    return this.venusAge;
+  }

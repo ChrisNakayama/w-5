@@ -17,3 +17,9 @@ export class Age {
     this.jupiterYearsPast = jupiterYearsPast;
   }
 
+//Test to ensure proper type
+  negativeCheck() {
+  if (this.earthAge < 0) {
+    return "age is negative";
+    }
+  }

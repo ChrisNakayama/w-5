@@ -43,3 +43,8 @@ export class Age {
     this.jupiterAge = (this.earthAge / 11.86);
     return this.jupiterAge;
   }
+//methods to determine years left to live on each planet
+    earthExpect() {
+    this.earthLifeLeft = (75 - this.earthAge);
+    return this.earthLifeLeft;
+  }

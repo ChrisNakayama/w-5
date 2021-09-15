@@ -11,7 +11,26 @@ This program calculates age in solar years based on different planets years comp
 
 Setup/Installation Requirements:
 
-Clone this github repository. Open files in your text editor. Edit script as necessary or simply drag index.html to your browser window to use the application as is. Your text editor must be able to handle HTML, CSS and JavaScript.
+
+Setup/Installation Requirements:
+
+1.Clone w-5 to desired directory or download .zip file
+
+2.Navigate to the directory in terminal or other command line interface with this command:
+
+$ cd currency-exchange
+
+while in the root directory install nodes with:
+
+$ npm install
+
+3.Once bundle.js and the node_module are installed run this command:
+
+$ npm run start
+
+4.if the animations are not running double check that anime.js is version 3.2.1
+
+
 
 Known Bugs:
 

@@ -28,6 +28,7 @@ $ npm install
 
 $ npm run start
 
+4. After $ npm run start command has completed you are ready to test! 
 
 
 

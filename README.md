@@ -18,7 +18,7 @@ Setup/Installation Requirements:
 
 2.Navigate to the directory in terminal or other command line interface with this command:
 
-$ cd currency-exchange
+$ cd w-5
 
 while in the root directory install nodes with:
 

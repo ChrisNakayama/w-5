@@ -14,7 +14,7 @@ Setup/Installation Requirements:
 
 Setup/Installation Requirements:
 
-1.Clone w-5 to desired directory or download .zip file
+1.Clone w-5 to desired directory or download .zip file.
 
 2.Navigate to the directory in terminal or other command line interface with this command:
 
@@ -28,7 +28,7 @@ $ npm install
 
 $ npm run start
 
-4.if the animations are not running double check that anime.js is version 3.2.1
+
 
 
 

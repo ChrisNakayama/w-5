@@ -11,25 +11,22 @@ This program calculates age in solar years based on different planets years comp
 
 Setup/Installation Requirements:
 
-
-Setup/Installation Requirements:
-
 1.Clone w-5 to desired directory or download .zip file.
 
 2.Navigate to the directory in terminal or other command line interface with this command:
 
 $ cd w-5
 
-while in the root directory install nodes with:
+3.while in the root directory install nodes with:
 
 $ npm install
 
-3.Once bundle.js and the node_module are installed run this command:
+4.Once bundle.js and the node_module are installed run this command:
 
 $ npm run start
 
-4. After $ npm run start command has completed you are ready to test! 
-5. Use the command: $ npm run test 
+5. After $ npm run start command has completed you are ready to test! 
+6. Use the command: $ npm run test 
 
 
 
